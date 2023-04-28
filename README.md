@@ -646,4 +646,153 @@ int main() {
 }
 ```
 ![image](https://user-images.githubusercontent.com/127211886/235086127-4ddc112b-7ad3-474d-a209-758f82d0afa1.png)
+**Bài 31. Bizon the Champion**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a1,a2,a3,b1,b2,b3,n;
+    scanf("%d %d %d %d %d %d\n",&a1,&a2,&a3,&b1,&b2,&b3);
+    scanf("%d",&n);
+    int x=(int)ceil(((double)a1+a2+a3)/5);
+    int y=(int)ceil(((double)b1+b2+b3)/10);
+    if(x<n)
+        if (y<=(n-x))
+            printf("YES");
+        else printf("NO");
+    else printf("NO");
+        
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 32. Ghép số**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int k2,k3,k5,k6;
+    scanf("%d %d %d %d ",&k2,&k3,&k5,&k6);
+    int k22;
+    int x=(int)fmin(k2,fmin(k5,k6));
+    if (x==k2)
+        printf("%lld",(long long)x*256ll);
+    else 
+    {
+        k22=k2-x;
+        if(k22<k3)
+             printf("%lld",(long long)32ll*k22+256ll*x);
+        else
+             printf("%lld",(long long)32ll*k3+256ll*x);
+    }
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 33. Chia tiền**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,n;
+    scanf("%d %d %d %d ",&a,&b,&c,&n);
+    long long x=(long long)a+b+c+n;
+    if(x%3ll==0 && (x/3)>=a && (x/3)>=b && (x/3)>=c)
+        printf("YES");
+    else printf("NO");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 34. Sự hào phóng**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d,e;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if ((a+b+c+d+e)%5==0 &&(a+b+c+d+e)!=0)
+       printf("%d",(a+b+c+d+e)/5);
+    else printf("-1");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 35. HPNY**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int h,m;
+    scanf("%d %d",&h,&m);
+    if (m==0)
+        printf("%d",(24-h)*60);
+    else printf("%d",(24-h-1)*60+60-m);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**[C++ Test 1]. Problem E**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c;
+    double d,x1,x2;
+    scanf("%d %d %d",&a,&b,&c);
+    if (a==0 && b==0&& c==0 )
+        printf("VO SO NGHIEM");
+    else
+        if (a==0 && b==0&& c!=0 )
+            printf("VO NGHIEM");
+    else if (a==0)
+             printf ("%.2lf",(double)(-c)/b);
+         else
+    {
+         d=(double)b*b-4*a*c;
+        if (d<0)
+            printf("VO NGHIEM");
+        else if(d=0)
+                  printf("%.2lf",(double)(-b)/(2*a));
+              else 
+              { 
+                  d=(double)b*b-4*a*c;
+                  x1=(((double)(-b)+sqrt(d))/(2*a));
+                  x2=(((double)(-b)-sqrt(d))/(2*a));
+                  printf("%.2lf %.2lf ",fmin(x1,x2),fmax(x1,x2));
+              }
+            
+    }
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+![image](https://user-images.githubusercontent.com/127211886/235090172-3be63d27-eb71-4530-8c6f-a9aa098b8749.png)
 
