@@ -238,6 +238,7 @@ int main() {
 }
 ```
 ![image](https://user-images.githubusercontent.com/127211886/235078959-86eaf677-f603-42a7-88c2-a7d27ff2a8a9.png)
+
 **Bài 11. Kiểm tra tam giác**
 ```sh
 #include <stdio.h>
@@ -371,7 +372,7 @@ int main() {
     return 0;
 }
 ```
-** Bài 17. Kiểm tra chữ cái**
+**Bài 17. Kiểm tra chữ cái**
 ```sh
 #include <stdio.h>
 #include <string.h>
@@ -451,7 +452,8 @@ int main() {
 }
 ```
 ![image](https://user-images.githubusercontent.com/127211886/235081228-3a01246f-f483-4fbf-be04-554c4e3ead16.png)
-** Bài 21. Frog**
+
+**Bài 21. Frog**
 ```sh
 #include <stdio.h>
 #include <string.h>
@@ -646,6 +648,7 @@ int main() {
 }
 ```
 ![image](https://user-images.githubusercontent.com/127211886/235086127-4ddc112b-7ad3-474d-a209-758f82d0afa1.png)
+
 **Bài 31. Bizon the Champion**
 ```sh
 #include <stdio.h>
