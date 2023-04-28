@@ -527,3 +527,123 @@ int main() {
     return 0;
 }
 ```
+**Bài 25. Đổi tiền**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("%d",n/100+(n%100)/20+(n%100%20)/10+(n%100%20%10)/5+(n%100%20%10%5));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 26. Số lớn nhất nhỏ nhất trong 4 số**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long a,b,c,d;
+    scanf("%lld %lld %lld %lld ",&a,&b,&c,&d);
+    long long max=a;
+    if (b>max) max=b;
+    if (c>max) max=c;
+    if (d>max) max=d;
+    long long min=a;
+    if (b<min) min=b;
+    if (c<min) min=c;
+    if (d<min) min=d;
+    printf("%lld %lld",max,min);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 27. Làm tròn số**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double x;
+    scanf("%lf",&x);
+    //printf("%lld",(long long)round(x));
+    long long x1=(long long)x;
+    double c=x-x1;
+    if (c>=0.5)
+        printf("%lld",x1+1);
+    else printf("%lld",x1);
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 28. Cấp số cộng**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,u1,d;
+    scanf("%d %d %d",&n,&u1,&d);
+    printf("%lld",(long long)1ll*n*u1+1ll*(n*(n-1))/2*d*1ll);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 29. Cấp số nhân**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    int x;
+    if(b%a==0)
+       x=b/a;
+    else printf("NO");
+    if(b==a*x)
+        if(c==b*x)
+            if(d==c*x)
+                printf("YES");
+    else printf("NO");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+**Bài 30. Tổ hợp chập 2**
+```sh
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("%lld",1ll*n*(n-1)/2);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+![image](https://user-images.githubusercontent.com/127211886/235086127-4ddc112b-7ad3-474d-a209-758f82d0afa1.png)
+
